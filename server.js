@@ -36,7 +36,7 @@ function insertTemp(data){
 
 // Read current temperature from sensor
 function readTemp(callback){
-   fs.readFile('/sys/bus/w1/devices/28-00000400a88a/w1_slave', function(err, buffer)
+   fs.readFile('/sys/bus/w1/devices/28-0000043a7cce/w1_slave', function(err, buffer)
 	{
       if (err){
          console.error(err);
@@ -166,11 +166,13 @@ var server = http.createServer(
 		}
 });
 
-// Start temperature logging (every 5 min).
-var msecs = (60 * 5) * 1000; // log interval duration in milliseconds
+// Start temperature logging (every 1 min).
+var msecs = (60 * 1) * 1000; // log interval duration in milliseconds
 logTemp(msecs);
+
 // Send a message to console
 console.log('Server is logging to database at '+msecs+'ms intervals');
+
 // Enable server
 server.listen(8000);
 // Log message
