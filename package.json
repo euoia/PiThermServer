@@ -13,5 +13,9 @@
   },
   "author": "",
   "readmeFilename": "README.md",
-  "gitHead": "78dbdeff10b89e90e0ffe2a2729174546b4782f0"
+  "gitHead": "78dbdeff10b89e90e0ffe2a2729174546b4782f0",
+  "dependencies": {
+    "sqlite3": "~2.1.5",
+    "node-static": "~0.6.7"
+  }
 }
