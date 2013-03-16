@@ -1,0 +1,17 @@
+{
+  "name": "PiThermServer",
+  "version": "0.0.1",
+  "description": "Read temperature from a DS18B20 temperature logger attached to a Raspberry Pi, log the results in a SQLite3 database, and serve webpages showing the data.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/euoia/PiThermServer"
+  },
+  "author": "",
+  "readmeFilename": "README.md",
+  "gitHead": "78dbdeff10b89e90e0ffe2a2729174546b4782f0"
+}
